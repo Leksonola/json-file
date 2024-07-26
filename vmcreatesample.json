@@ -55,7 +55,7 @@
             "type": "Microsoft.Network/publicIPAddresses",
             "apiVersion": "2022-07-01",
             "name": "[parameters('publicIPAddresses_VM2_ip_name')]",
-            "location": "westus",
+            "location": "canadaeast",
             "sku": {
                 "name": "Basic",
                 "tier": "Regional"
@@ -72,7 +72,7 @@
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2022-08-01",
             "name": "[parameters('virtualMachines_VM1_name')]",
-            "location": "westus",
+            "location": "canadaeast",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_VM1_nic_name'))]"
             ],
